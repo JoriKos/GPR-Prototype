@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Unityevent")]
+    public UnityEvent Attack;
+
+    [SerializeField] private Character character;
+
+    private void Awake()
     {
-        
+        character = this.gameObject.GetComponent<Character>();
+        character.FillEnemiesArray("Defender");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }

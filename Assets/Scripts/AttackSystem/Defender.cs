@@ -4,25 +4,11 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] private int health;
-    [SerializeField] private bool isAlive;
+    [SerializeField] private Character character;
 
-    private void Update()
+    private void Awake()
     {
-        if (health <= 0)
-        {
-            Kill(); 
-        }
-    }
-
-    void Kill()
-    {
-        isAlive = false;
-    }
-
-
-    bool getStatus()
-    {
-        return isAlive;
+        character = this.gameObject.GetComponent<Character>();
+        character.FillEnemiesArray("Attacker");
     }
 }

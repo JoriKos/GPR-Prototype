@@ -8,7 +8,7 @@ public class EventScript : MonoBehaviour
     [Header("Unityevent")]
     public UnityEvent testEvent;
 
-    /*
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -16,5 +16,5 @@ public class EventScript : MonoBehaviour
             testEvent.Invoke();
         }
     }
-    */
+    
 }

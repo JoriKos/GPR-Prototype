@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    [Header("Unityevent")]
+    [Header("Attack")]
     public UnityEvent Attack;
 
     [SerializeField] private Character character;

@@ -35,6 +35,10 @@ public class Character : MonoBehaviour
         return enemies;
     }
 
+    public void SubtractHealth(int value)
+    {
+        health -= value;
+    }
 
     public bool getStatus()
     {
